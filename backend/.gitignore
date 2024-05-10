@@ -1,0 +1,16 @@
+/.vs/*
+**/*.suo
+**/*.user
+**/*.bak
+**/*.orig
+**/UpgradeLog.htm
+**/bin/*
+**/obj/*
+**/App_Data/Logs/*
+**/ElmahLogs/*
+Logs
+/src/Boxfusion.eLib.Web.Host/web.config
+/src/Boxfusion.eLib.Web.Host/Boxfusion.eLib.Web.Core.xml
+/sh.exe.stackdump
+
+

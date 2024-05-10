@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Boxfusion.eLib.Web.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Boxfusion.eLib.Authentication.EtkAzureADAuthenticationSource">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Boxfusion.eLib.Authentication.EtkAzureADAuthenticationSource.#ctor(Shesha.AzureAD.Configuration.IAzureADSettings,Shesha.AzureAD.Configuration.ISheshaAzureADModuleConfig)">
+            <summary>
+            
+            </summary>
+            <param name="settings"></param>
+            <param name="ldapModuleConfig"></param>
+        </member>
+        <member name="T:Boxfusion.eLib.Authentication.EtkLdapAuthenticationSource">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Boxfusion.eLib.Authentication.EtkLdapAuthenticationSource.#ctor(Shesha.Ldap.Configuration.ILdapSettings,Shesha.Ldap.Configuration.ISheshaLdapModuleConfig)">
+            <summary>
+            
+            </summary>
+            <param name="settings"></param>
+            <param name="ldapModuleConfig"></param>
+        </member>
+        <member name="T:Boxfusion.eLib.Common.Authorization.CommonRoles">
+            <summary>
+            eLib Role Names
+            </summary>
+        </member>
+        <member name="F:Boxfusion.eLib.Common.Authorization.CommonRoles.DataAdministrator">
+            <summary>
+            Data Administrator
+            </summary>
+        </member>
+        <member name="F:Boxfusion.eLib.Common.Authorization.CommonRoles.SystemAdministrator">
+            <summary>
+            System Administrator
+            </summary>
+        </member>
+        <member name="F:Boxfusion.eLib.Common.Authorization.CommonRoles.GlobalAdmin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Boxfusion.eLib.Common.Authorization.IeLibPermissionChecker">
+            <summary>
+            eLib Permission checker
+            </summary>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.IeLibPermissionChecker.IsDataAdministrator(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.IeLibPermissionChecker.IsGlobalAdmin(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.IeLibPermissionChecker.IsAdmin(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Boxfusion.eLib.Common.Authorization.eLibPermissionChecker">
+            <summary>
+            eLib Permission checker
+            </summary>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.eLibPermissionChecker.#ctor(Abp.Domain.Repositories.IRepository{Shesha.Domain.Person,System.Guid},Abp.Domain.Repositories.IRepository{Shesha.Domain.ShaRoleAppointedPerson,System.Guid},Abp.Domain.Repositories.IRepository{Shesha.Domain.ShaRoleAppointmentEntity,System.Guid})">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.eLibPermissionChecker.IsGrantedAsync(System.Int64,System.String)">
+            <summary>
+            inheritedDoc
+            </summary>
+            <param name="userId"></param>
+            <param name="permissionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.eLibPermissionChecker.IsGranted(System.Int64,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="permissionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.eLibPermissionChecker.IsInAnyOfRoles(Shesha.Domain.Person,System.String[])">
+            <summary>
+            inheritedDoc
+            </summary>
+            <param name="person"></param>
+            <param name="roles"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.eLibPermissionChecker.IsDataAdministrator(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.eLibPermissionChecker.IsAdmin(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.eLibPermissionChecker.IsGlobalAdmin(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Boxfusion.eLib.Configuration.HostingEnvironmentExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Boxfusion.eLib.Configuration.HostingEnvironmentExtensions.GetAppConfiguration(Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="env"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Boxfusion.eLib.Hangfire.HangfireAuthorizationFilter">
+            <summary>
+            Hangfire authorization filter: This should be obsolete since Shesha comes with Hangfire Authorization inbuilt
+            </summary>
+        </member>
+        <member name="M:Boxfusion.eLib.Hangfire.HangfireAuthorizationFilter.Authorize(Hangfire.Dashboard.DashboardContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Boxfusion.eLib.eLibWebCoreModule">
+            <summary>
+            ReSharper disable once InconsistentNaming
+            </summary>
+        </member>
+        <member name="M:Boxfusion.eLib.eLibWebCoreModule.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="env"></param>
+        </member>
+        <member name="M:Boxfusion.eLib.eLibWebCoreModule.PreInitialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Boxfusion.eLib.eLibWebCoreModule.Initialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Boxfusion.eLib.Swagger.ApiExplorerGroupPerControllerConvention">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Boxfusion.eLib.Swagger.ApiExplorerGroupPerControllerConvention.Apply(Microsoft.AspNetCore.Mvc.ApplicationModels.ControllerModel)">
+            <summary>
+            
+            </summary>
+            <param name="controller"></param>
+        </member>
+        <member name="M:Boxfusion.eLib.Swagger.ApiExplorerGroupPerControllerConvention.GroupInclusionPredicate(System.String,Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription)">
+            <summary>
+            
+            </summary>
+            <param name="docName"></param>
+            <param name="apiDescription"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Shesha.Identity.ExternalLoginInfoHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Shesha.Identity.ExternalLoginInfoHelper.GetNameAndSurnameFromClaims(System.Collections.Generic.List{System.Security.Claims.Claim})">
+            <summary>
+            
+            </summary>
+            <param name="claims"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

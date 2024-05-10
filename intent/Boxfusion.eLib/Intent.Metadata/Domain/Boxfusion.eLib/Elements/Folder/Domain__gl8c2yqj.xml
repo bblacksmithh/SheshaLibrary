@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="f4b258ae-27fb-4159-b129-808f2dc532ce" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>Domain</name>
+  <display>Domain</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>79b6616c-50ce-4324-92b1-087d3e69e29d</parentFolderId>
+  <packageId>79b6616c-50ce-4324-92b1-087d3e69e29d</packageId>
+  <packageName>Boxfusion.eLib</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>
