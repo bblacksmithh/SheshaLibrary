@@ -48,32 +48,6 @@
             
             </summary>
         </member>
-        <member name="T:Boxfusion.eLib.Common.Authorization.IeLibPermissionChecker">
-            <summary>
-            eLib Permission checker
-            </summary>
-        </member>
-        <member name="M:Boxfusion.eLib.Common.Authorization.IeLibPermissionChecker.IsDataAdministrator(Shesha.Domain.Person)">
-            <summary>
-            
-            </summary>
-            <param name="person"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Boxfusion.eLib.Common.Authorization.IeLibPermissionChecker.IsGlobalAdmin(Shesha.Domain.Person)">
-            <summary>
-            
-            </summary>
-            <param name="person"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Boxfusion.eLib.Common.Authorization.IeLibPermissionChecker.IsAdmin(Shesha.Domain.Person)">
-            <summary>
-            
-            </summary>
-            <param name="person"></param>
-            <returns></returns>
-        </member>
         <member name="T:Boxfusion.eLib.Common.Authorization.eLibPermissionChecker">
             <summary>
             eLib Permission checker
@@ -129,6 +103,32 @@
             <param name="person"></param>
             <returns></returns>
         </member>
+        <member name="T:Boxfusion.eLib.Common.Authorization.IeLibPermissionChecker">
+            <summary>
+            eLib Permission checker
+            </summary>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.IeLibPermissionChecker.IsDataAdministrator(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.IeLibPermissionChecker.IsGlobalAdmin(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Boxfusion.eLib.Common.Authorization.IeLibPermissionChecker.IsAdmin(Shesha.Domain.Person)">
+            <summary>
+            
+            </summary>
+            <param name="person"></param>
+            <returns></returns>
+        </member>
         <member name="T:Boxfusion.eLib.Configuration.HostingEnvironmentExtensions">
             <summary>
             
@@ -139,18 +139,6 @@
             
             </summary>
             <param name="env"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Boxfusion.eLib.Hangfire.HangfireAuthorizationFilter">
-            <summary>
-            Hangfire authorization filter: This should be obsolete since Shesha comes with Hangfire Authorization inbuilt
-            </summary>
-        </member>
-        <member name="M:Boxfusion.eLib.Hangfire.HangfireAuthorizationFilter.Authorize(Hangfire.Dashboard.DashboardContext)">
-            <summary>
-            
-            </summary>
-            <param name="context"></param>
             <returns></returns>
         </member>
         <member name="T:Boxfusion.eLib.eLibWebCoreModule">
@@ -173,6 +161,18 @@
             <summary>
             
             </summary>
+        </member>
+        <member name="T:Boxfusion.eLib.Hangfire.HangfireAuthorizationFilter">
+            <summary>
+            Hangfire authorization filter: This should be obsolete since Shesha comes with Hangfire Authorization inbuilt
+            </summary>
+        </member>
+        <member name="M:Boxfusion.eLib.Hangfire.HangfireAuthorizationFilter.Authorize(Hangfire.Dashboard.DashboardContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
         </member>
         <member name="T:Boxfusion.eLib.Swagger.ApiExplorerGroupPerControllerConvention">
             <summary>
